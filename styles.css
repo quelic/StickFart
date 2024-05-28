@@ -1,0 +1,124 @@
+/* Basic reset and minimalistic styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', monospace; /* Monospace font for that retro feel */
+}
+
+body {
+    background-color: #f0f0f0;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+header {
+    background: #222;
+    color: #ddd;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 20px;
+    border-bottom: 1px solid #444;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+#hero {
+    background: #333;
+    color: #eee;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid #444;
+}
+
+#features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px 5px;
+}
+
+#features div {
+    background: #fff;
+    border: 2px solid #ccc;
+    padding: 15px;
+    margin: 10px;
+    flex: 1;
+    min-width: 250px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 2px 2px 5px #888888;
+}
+
+button {
+    background: red;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px; /* Rounded buttons */
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background: #777;
+    transform: translateY(-2px);
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #222;
+    color: #ddd;
+    border-top: 1px solid #444;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    #features {
+        flex-direction: column;
+    }
+}
+
+/* Default styling for larger screens */
+pre {
+    font-family: 'Courier New', monospace;
+    color: white;
+    text-align: center;
+    font-size: 12px; /* Default font size */
+    white-space: pre-wrap; /* Ensures the art wraps and respects container boundaries */
+    word-break: break-word; /* Prevents overflow */
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 768px) {
+    pre {
+        font-size: 8px; /* Slightly smaller font size for tablets */
+    }
+}
+
+/* Smaller screens (phones) */
+@media (max-width: 480px) {
+    pre {
+        font-size: 6px; /* Even smaller font size for phones */
+    }
+}
